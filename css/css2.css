@@ -43,7 +43,7 @@ body {
 
 .home {
     background: none;
-    color: rgb(102, 185, 240);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 .home h1,p{
@@ -54,10 +54,10 @@ body {
     justify-content: center;
     display: flex;
     background: none;
-    color: rgb(102, 185, 240);
+    color: rgb(0, 0, 0);
 }
 .cima1{
-    background-color: #000000;
+   
     height: 400px;
 }
 .cima1 h1,p{
@@ -71,7 +71,7 @@ body {
     height: 400px;
 }
 .baixo2{
-    background-color: #000000;
+   
     height: 400px;
     width: 600px;
 }
@@ -194,26 +194,6 @@ body {
 }
 
 
-  /* Estilo para o carrossel */
-  .swiper-button-next, .swiper-button-prev {
-    color: #fff;  /* Cor das setas */
-    font-size: 30px;  /* Tamanho das setas */
-    z-index: 10;  /* Para garantir que as setas fiquem acima das imagens */
-}
-
-.swiper-button-next {
-    right: 10px;  /* Distância do lado direito */
-}
-
-.swiper-button-prev {
-    left: 10px;  /* Distância do lado esquerdo */
-}
-
-/* Estilos para a galeria de trabalhos */
-.trabalhos {
-    padding: 50px 0;
-    background: #f9f9f9;
-}
 
 .trabalhos h2 {
     text-align: center;
@@ -379,8 +359,10 @@ footer {
             margin: 0;
         }
         .item:hover{
+           
             transform: scale(1.1);
         }
+    
         @media screen and (max-width: 472px){
           .flex{
             justify-content: space-between;
