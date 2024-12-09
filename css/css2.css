@@ -5,23 +5,25 @@
 }
 
 body {
+    background-repeat: no-repeat;
+    background-size:cover;
     font-family: Arial, sans-serif;
-    background-color: #797474;
     color: #ffffff;
     min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da janela */
     margin: 0;
 }
 
 .flex {
-    background-color: #9e9e9e;
+    background-color: #ffffff;
     padding: 10px 0;
     display: flex;
+    justify-content: center;
      text-align: center;
 }
   
 .flex a {
     text-decoration: none; /* Remove o sublinhado */
-    color: rgb(255, 255, 255); /* Cor do texto */
+    color: rgb(0, 0, 0); /* Cor do texto */
     padding: 10px 20px; /* Espaçamento interno dos links */
     font-size: 20px; /* Tamanho do texto */
     transition: all 0.3s ease; /* Animação suave para alterações */
@@ -34,26 +36,25 @@ body {
     border-radius: 5px; /* Adiciona bordas arredondadas */
     transform: scale(1.1); /* Amplia ligeiramente o link */
 }
-.flex img{
-    margin-left: 350px;
-    margin-right: 70px;
-}
 .menu{
     margin-top: 30px;
     
 }
 
 .home {
-    background: #4d4d4d;;
-    color: white;
-    padding: 50px 0;
+    background: none;
+    color: rgb(102, 185, 240);
     text-align: center;
+}
+.home h1,p{
+    background: none;
 }
 
 .exemplos{
-    margin-left: 90px;
-    margin-right:100px ;
+    justify-content: center;
     display: flex;
+    background: none;
+    color: rgb(102, 185, 240);
 }
 .cima1{
     background-color: #000000;
@@ -72,16 +73,17 @@ body {
 .baixo2{
     background-color: #000000;
     height: 400px;
+    width: 600px;
 }
 .baixo2 h1{
     margin-left: 45px;
 }
 .cortes{
-    margin-top: 20px;
     text-align: center;
-    background-color: #3a3838;
+    background-color: #636363;
 }
 .cortes ul{
+  justify-content: center;
     display: flex;
     list-style: none;
 }
@@ -126,7 +128,7 @@ body {
 }
 
 .agendamento {
-    background: #1a1a1a;
+    
     padding: 50px;
     text-align: center;
     transition: all 0.3s ease; /* Animação suave para alterações */
@@ -172,6 +174,7 @@ body {
     background-color: #5c5c5c;
     transform: scale(1.1); /* Amplia ligeiramente o link */
 }
+
 .localizacao {
     text-align: center;
     background-color: #494747;
@@ -378,7 +381,7 @@ footer {
         .item:hover{
             transform: scale(1.1);
         }
-        @media screen and (max-width: 412px){
+        @media screen and (max-width: 472px){
           .flex{
             justify-content: space-between;
           }
