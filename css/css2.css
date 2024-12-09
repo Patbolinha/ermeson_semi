@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #797474;
+    color: #ffffff;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da janela */
+    margin: 0;
+}
+
+.flex {
+    background-color: #9e9e9e;
+    padding: 10px 0;
+    display: flex;
+     text-align: center;
+}
+  
+.flex a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno dos links */
+    font-size: 20px; /* Tamanho do texto */
+    transition: all 0.3s ease; /* Animação suave para alterações */
+}
+
+/* Quando o mouse passa por cima do link */
+.flex a:hover {
+    font-size: 18px; /* Aumenta o tamanho do texto */
+    background-color: #8f8c8c; /* Muda a cor de fundo */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    transform: scale(1.1); /* Amplia ligeiramente o link */
+}
+.flex img{
+    margin-left: 350px;
+    margin-right: 70px;
+}
+.menu{
+    margin-top: 30px;
+    
+}
+
+.home {
+    background: #4d4d4d;;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.exemplos{
+    margin-left: 90px;
+    margin-right:100px ;
+    display: flex;
+}
+.cima1{
+    background-color: #000000;
+    height: 400px;
+}
+.cima1 h1,p{
+    margin-left: 45px;
+}
+.cima2 img{ 
+    width: 600px;
+   
+}
+.baixo1{
+    height: 400px;
+}
+.baixo2{
+    background-color: #000000;
+    height: 400px;
+}
+.baixo2 h1{
+    margin-left: 45px;
+}
+.cortes{
+    margin-top: 20px;
+    text-align: center;
+    background-color: #3a3838;
+}
+.cortes ul{
+    display: flex;
+    list-style: none;
+}
+.cortes1{
+    display: flex;
+}
+.cortes2{
+    display: flex;
+}
+
+.cortes ul img{
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 30px;
+        border: 3px solid rgb(102, 101, 101);
+        border-radius: 50px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;  /* Cor das setas */
+    font-size: 30px;  /* Tamanho das setas */
+    z-index: 10;  /* Para garantir que as setas fiquem acima das imagens */
+}
+
+.swiper-button-next {
+    right: 10px;  /* Distância do lado direito */
+}
+
+.swiper-button-prev {
+    left: 10px;  /* Distância do lado esquerdo */
+}
+
+.trabalhos {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #383232;
+}
+
+.swiper-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.agendamento {
+    background: #1a1a1a;
+    padding: 50px;
+    text-align: center;
+    transition: all 0.3s ease; /* Animação suave para alterações */
+}
+
+.agendamento form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.agendamento label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.agendamento input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.agendamento select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.agendamento button {
+    padding: 10px 20px;
+    background-color: #0d0d0d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.agendamento button:hover {
+    background-color: #5c5c5c;
+    transform: scale(1.1); /* Amplia ligeiramente o link */
+}
+.localizacao {
+    text-align: center;
+    background-color: #494747;
+}
+.localizacao h1{
+    height: 70px;
+}
+
+.horarios {
+    background: #0e0e0e;
+    padding: 50px;
+    text-align: center;
+}
+
+.horarios ul {
+    list-style-type: none;
+}
+
+
+  /* Estilo para o carrossel */
+  .swiper-button-next, .swiper-button-prev {
+    color: #fff;  /* Cor das setas */
+    font-size: 30px;  /* Tamanho das setas */
+    z-index: 10;  /* Para garantir que as setas fiquem acima das imagens */
+}
+
+.swiper-button-next {
+    right: 10px;  /* Distância do lado direito */
+}
+
+.swiper-button-prev {
+    left: 10px;  /* Distância do lado esquerdo */
+}
+
+/* Estilos para a galeria de trabalhos */
+.trabalhos {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.trabalhos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trabalhos .galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trabalhos .galeria .item {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trabalhos .galeria .item img {
+    width: 100%;
+    height: auto;
+}
+
+.trabalhos .galeria .item h3 {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+}
+
+
+section {
+    display: inline;
+}
+
+
+
+/* Estilo do footer */
+footer {
+    background: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Contêiner principal */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo e descrição */
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Ícone do Instagram */
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #a2a7a1; /* Cor de destaque ao passar o mouse */
+    transform: scale(1.1); /* Pequeno zoom no link */
+}
+.img2{
+    display: none;
+}
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Direitos autorais */
+.footer-rights {
+    font-size: 12px;
+    color: #fffdfd;
+    margin-top: 10px;
+    flex-basis: 100%; /* Ocupa toda a largura em telas menores */
+    text-align: center;
+}
+
+
+
+   .flex a {
+          
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+       
+
+       
+
+        /* Seção de Trabalhos */
+        .trabalhos {
+            padding: 50px 0;
+            background: #4d4d4d     ;
+        }
+
+        .trabalhos h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .trabalhos .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .trabalhos .galeria .item {
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .trabalhos .galeria .item img {
+            width: 100px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .trabalhos .galeria .item h3 {
+            background: #1c1c1c;
+            color: white;
+            padding: 10px 0;
+            margin: 0;
+        }
+        .item:hover{
+            transform: scale(1.1);
+        }
+        @media screen and (max-width: 412px){
+          .flex{
+            justify-content: space-between;
+          }
+            .flex img{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .img2{
+                width: 40px;
+            }
+            .menu{
+        display: none;
+           
+        }
+        .img2{
+            display: inline;
+        }
+        .exemplos{
+            display: inline;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .cima1 p{
+            margin-top: 60px;
+        }
+        .cima2 img{
+            width: 100%;
+
+        }
+        .baixo{
+          display: none;
+        }
+        .cortes{
+            margin: 0 auto;
+
+        }
+        .cortes ul{
+            display: inline;
+        }
+        .cortes1, .cortes2{
+            display: flex;
+        }
+        .cortes ul img{
+            width: 150px;
+        }
+            }
+
+        
