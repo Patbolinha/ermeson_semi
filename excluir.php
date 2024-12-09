@@ -124,7 +124,7 @@
                     <td>$id</td>
                     <td>$nome</td>
                     <td>$data</td>
-                    <td>$horario:00</td>
+                    <td>$horario</td>
                     <td>$servico</td>
                     <td width= 150px>
                     <div class='action-buttons'>
